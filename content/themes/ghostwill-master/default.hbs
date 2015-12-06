@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{! Document Settings }}
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		{{! Page Meta }}
+		<title>{{meta_title}}</title>
+		<meta name="description" content="我叫聂明洋，在校学生，喜欢折腾，也喜欢学习新东西，谨以此博客记录和分享自己的学习过程。" />
+        <meta name="keywords" content="独立博客,iPhone">
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<link rel="author" type="text/plain" href="humans.txt" />
+		<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+		{{! 添加 gogole puls 信息 请修改成自己的地址}}
+		<link rel="author" href="https://plus.google.com/u/0/">
+		{{! Styles'n'Scripts }}
+		<link rel="stylesheet" type="text/css" href="{{asset "/css/min.style.css"}}" />
+		<link href='http://fonts.googleapis.com/css?family=Exo:100,400' rel='stylesheet' type='text/css'>
+        <!--[if lte IE 8]>
+            为了你的浏览体验，请升级您的IE或者使用其他高级浏览器。
+        <![endif]-->
+
+		{{ghost_head}}
+	</head>
+	<body class="{{body_class}}">
+		{{{body}}}
+
+		<footer class="site-footer">
+		<div class="feed-sub">
+			<a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">{{!-- 订阅 --}}</span></a>
+			<i class="iconfont icon-feed">&#xe751;</i>
+		</div>
+		
+
+<section class="share">
+<h4>分享一下</h4>
+<div class="share-icons">
+<a class="icon-share" href="http://service.weibo.com/share/share.php?url={{url absolute="true"}}&title={{encode title}}"
+onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+<span class=""><i class="iconfont icon-weibo">&#x3432;</i></span>
+</a>
+
+<a class="icon-share" href=" http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?desc={{encode title}}&url={{url absolute="true"}}"
+onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+<span class=""><i class="iconfont icon-qzone">&#xe60d;</i></span>
+</a>
+
+<a class="icon-share" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
+onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+<span class=""><i class="iconfont  icon-twitter">&#xe763;</i></span>
+</a>
+<a class="icon-share" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+<span class=""><i class="iconfont  icon-facebook">&#x3433;</i></span>
+</a>
+</div>
+</section>
+<img id="imgSinaShare" class="img_sina_share" title="将选中内容分享到新浪微博" src="http://simg.sinajs.cn/blog7style/images/common/share.gif" />
+			<div class="inner">
+			<section class="copyright"><a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+			<section>
+			Designed by <a href="http://terrynie.com">@聂明洋</a>
+			from <a href="http://terrynie.com">奇创IT工作室 </a>
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254840529'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254840529%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+			</section>
+		
+		</div>		
+	
+		</footer>
+
+		{{! Ghost outputs important scripts and data with this tag }}
+		{{ghost_foot}}
+        {{!-- 转场动画 --}}
+		{{! The main JavaScript file for Casper }}
+		<script type="text/javascript" src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+		<script type="text/javascript" src="{{asset "js/jquery.stellar.min.js"}}"></script>
+		<script type="text/javascript" src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
+		<script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+		<script type="text/javascript" src="{{asset "js/min.v.js"}}"></script>
+		
+	</body>
+</html>
