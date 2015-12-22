@@ -12,7 +12,7 @@
     IDE: Sublime text 3, Grunt, Sass, Git, Github
 
 /*团队*/
-    设计：罗磊
+    设计：聂明洋
     邮箱：i [at] 88@terrynie.com
     微博：http://weibo.com/u/5035725283
     来自：郑州, 河南 ,中国
