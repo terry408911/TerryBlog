@@ -6,5 +6,9 @@ function donated(){
 }
 
 function mouse_over(){
-	document.getElementById("donate_img").src = "http//terrynie.com/images/after_donate.png";
+	document.getElementById("donate_img").src = "http://terrynie.com/images/after_donate.png";
+}
+
+function mouse_Out(){
+	document.getElementById("donate_img").src="http://terrynie.com/images/before_donate.png"
 }
