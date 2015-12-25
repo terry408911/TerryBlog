@@ -27,14 +27,51 @@
 {{content}}
 </div>
 <section class="share">
-	
-	<center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:donated()" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center>
-		<form id="donate" name="donate" action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
+	<!--打赏-->
+	<center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center>
+        <div id="light" class="white_content">
+			<center><h3>感谢您的支持！</h3></center>
+			<center>
+                <div id="img">
+                    <img src="http://terrynie.com/images/alipay10.png">
+                    <center>支付宝￥10</center>
+                </div>
+                <div id="img">
+                    <img src="http://terrynie.com/images/alipay20.png">
+                    <center>支付宝￥20</center>
+                </div>
+                <div id="img">
+                    <img src="http://terrynie.com/images/alipay30.png">
+                    <center>支付宝￥30</center>
+                </div>
+                <br>
+                <div id="img">
+                    <img src="http://terrynie.com/images/wechat10.png">
+                    <center>微信￥10</center>
+                </div>
+                <div id="img">
+                    <img src="http://terrynie.com/images/wechat20.png">
+                    <center>微信￥20</center>
+                </div>
+                <div id="img">
+                    <img src="http://terrynie.com/images/wechat30.png">
+                    <center>微信￥30</center>
+                </div>
+            <center><br>
+			<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭</a>
+		</div> 
+        <div id="fade" class="black_overlay">
+		
+		</div> 
+    
+    
+		<!--<form id="donate" name="donate" action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
 			<input name="optEmail" type="hidden" value="15538382778" />
 			<input id="payAmount" name="payAmount" type="hidden" value="5" />
 			<input id="title" name="title" type="hidden" value="默认显示的付款说明" />
 			<input name="memo" type="hidden" value="备注" />
-		</form>
+		</form>-->
+        
 	<h4>分享一下</h4>
 	<div class="share-icons">
 		<a class="icon-share" href="http://service.weibo.com/share/share.php?url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
