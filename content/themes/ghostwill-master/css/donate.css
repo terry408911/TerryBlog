@@ -33,6 +33,7 @@
 
 #image{
     float: left;
+    margin-top: 5px;
     margin-left: 6%;
     margin-bottom: 20px;
 }
