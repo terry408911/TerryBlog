@@ -32,7 +32,7 @@ function donate(){
 	//弹出层滚动居中
 	function newDivCenter() {
 		document.getElementById("light").top = (document.body.scrollTop + document.body.clientHeight / 2 - document.getElementById("light").height / 2 + winHeight / 2) + "px";
-
+		document.getElementById('fade').height = winHeight+"px";
 		// newDiv.style.left = (document.body.scrollLeft + document.body.clientWidth / 2 - newDivWidth / 2) + "px";
 	}
 	//处理滚动事件，使弹出层始终居中
