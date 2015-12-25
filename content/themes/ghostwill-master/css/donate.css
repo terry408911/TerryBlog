@@ -18,7 +18,8 @@
 .white_content { 
     display: none; 
     position: absolute; 
-    top: 18%; 
+    /*top: 18%; */
+    bottom: 10%;
     left: 25%; 
     width: 55%; 
     height: 64%; 
