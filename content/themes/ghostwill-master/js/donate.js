@@ -23,6 +23,8 @@ function donate(){
 	// document.getElementById("payAmount").value=money;
 	// alert("感谢您的支持，您打赏了"+money+"元！");
 	// document.getElementById("donate").submit();
+	document.getElementById('light').style.display='block';
+	document.getElementById('fade').style.display='block';
 
 	findDimensions(); //调用函数，获取数值  
 	window.onresize=findDimensions;
@@ -30,6 +32,7 @@ function donate(){
 	//弹出层滚动居中
 	function newDivCenter() {
 		document.getElementById("light").top = (document.body.scrollTop + document.body.clientHeight / 2 - document.getElementById("light").height / 2 + winHeight / 2) + "px";
+
 		// newDiv.style.left = (document.body.scrollLeft + document.body.clientWidth / 2 - newDivWidth / 2) + "px";
 	}
 	//处理滚动事件，使弹出层始终居中
