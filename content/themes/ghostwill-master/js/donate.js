@@ -26,20 +26,20 @@ function donate(){
 	document.getElementById('light').style.display='block';
 	document.getElementById('fade').style.display='block';
 
-	findDimensions(); //调用函数，获取数值  
-	window.onresize=findDimensions;
+	// findDimensions(); //调用函数，获取数值  
+	// window.onresize=findDimensions;
 
 	//弹出层滚动居中
 	function newDivCenter() {
-		document.getElementById("light").top = (document.body.scrollTop + document.body.clientHeight / 2 - document.getElementById("light").height / 2 + winHeight / 2) + "px";
-		document.getElementById('fade').height = winHeight+"px";
+		document.getElementById("light").top = (document.body.scrollTop + document.body.clientHeight / 2 - document.getElementById("light").height / 2 + window.innerHeight / 2) + "px";
+		document.getElementById('fade').height = document.body.height+"px";
 		// newDiv.style.left = (document.body.scrollLeft + document.body.clientWidth / 2 - newDivWidth / 2) + "px";
 	}
 	//处理滚动事件，使弹出层始终居中
 	if (document.all){ 
-		window.attachEvent("onscroll", newDivCenter);
+		window.attachEvent("onscroll", newDivCenter());
 	} else {
-		window.addEventListener('scroll', newDivCenter, false);
+		window.addEventListener('scroll', newDivCenter(), false);
 	}
 }
 
