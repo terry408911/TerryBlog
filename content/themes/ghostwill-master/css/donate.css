@@ -23,6 +23,7 @@
     width: 55%; 
     min-height: 550px;
     min-width: 810px;
+    max-width: 830px;
     height: 64%; 
     padding: 10px; 
     border: 1px solid orange; 
