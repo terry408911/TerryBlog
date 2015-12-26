@@ -76,7 +76,7 @@
                 backYloc = parseInt($(backname).css("top").substring(0, $(backname).css("top").indexOf("px")));
                 $(window).scroll(function() { 
                     offset = menuYloc + $(document).scrollTop() + "px"; 
-                    offset1 = backYloc + $(document).srollTop() + "px";
+                    offset1 = backYloc + $(document).scrollTop() + "px";
                     $(name).animate({ top: offset }, { duration: 1000, queue: false }); 
                     $(backname).animate({top: offset1 }, { duration: 1, queue: false})
                 }); 
