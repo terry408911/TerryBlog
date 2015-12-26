@@ -32,7 +32,7 @@
 	<!--打赏-->
 	<center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:donate();" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center>
         <div id="light" class="white_content">
-            
+            <div style="width:100%;">
 			<center><h3>感谢您的支持！</h3></center>
 			<center>
                 <div id="image">
@@ -61,10 +61,10 @@
                     <center>微信￥30</center>
                 </div>
             </center>
-            
-                <div style="float:right;margin-botton:30px;">
-			         <center><button onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭</button></center>
-                </div>
+            </div>
+            <div style="width:100px">
+			     <center><button onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭</button></center>
+            </div>
             
             
 		</div> 
@@ -73,7 +73,7 @@
 		</div> 
         <!--实现窗口滑动-->
         <script type="text/javascript"> 
-            //<![CDATA[ 
+          
             var name = "#light"; 
             var backname = "#fade";
             var menuYloc = null; 
@@ -88,14 +88,8 @@
                     $(backname).animate({top: offset1 }, { duration: 1, queue: false})
                 }); 
             }); 
-            //]]> 
+        
         </script> 
-		<!--<form id="donate" name="donate" action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
-			<input name="optEmail" type="hidden" value="15538382778" />
-			<input id="payAmount" name="payAmount" type="hidden" value="5" />
-			<input id="title" name="title" type="hidden" value="默认显示的付款说明" />
-			<input name="memo" type="hidden" value="备注" />
-		</form>-->
         
 	<h4>分享一下</h4>
 	<div class="share-icons">
