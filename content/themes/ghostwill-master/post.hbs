@@ -31,9 +31,9 @@
 <section class="share">
 	<!--打赏-->
 	{{!-- <center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:donate();" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center> --}}
-    <center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:$("#showImg").slideToggle();" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center>
-        <div id="showImg" style="with:100px;height:100px;margin: auto;display:none;">
-            <img src="http://terry408911.oss-cn-hongkong.aliyuncs.com/images/Screen%20Shot%202016-04-01%20at%2012.30.37%20PM.png" style="width:75px;height: 75px;margin: auto;">
+    <center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center>
+        <div id="showImg" style="with:100px;height:100px;margin:auto;display:none;">
+            <img src="http://terry408911.oss-cn-hongkong.aliyuncs.com/images/Screen%20Shot%202016-04-01%20at%2012.30.37%20PM.png" style="width:75px;height:75px;margin:auto;">
         </div>
         <!--<div id="light" class="white_content">
             <div style="width:100%;">
@@ -78,20 +78,27 @@
         <!--实现窗口滑动-->
         <script type="text/javascript"> 
           
-            var name = "#light"; 
-            var backname = "#fade";
-            var menuYloc = null; 
-            var backYloc = null;
-            $(document).ready(function() { 
-                menuYloc = parseInt($(name).css("top").substring(0, $(name).css("top").indexOf("px"))) ;
-                backYloc = parseInt($(backname).css("top").substring(0, $(backname).css("top").indexOf("px")));
-                $(window).scroll(function() { 
-                    offset = menuYloc + $(document).scrollTop() + "px"; 
-                    offset1 = backYloc + $(document).scrollTop() + "px";
-                    $(name).animate({ top: offset }, { duration: 1000, queue: false }); 
-                    $(backname).animate({top: offset1 }, { duration: 1, queue: false})
-                }); 
-            }); 
+            // var name = "#light"; 
+            // var backname = "#fade";
+            // var menuYloc = null; 
+            // var backYloc = null;
+            // $(document).ready(function() { 
+            //     menuYloc = parseInt($(name).css("top").substring(0, $(name).css("top").indexOf("px"))) ;
+            //     backYloc = parseInt($(backname).css("top").substring(0, $(backname).css("top").indexOf("px")));
+            //     $(window).scroll(function() { 
+            //         offset = menuYloc + $(document).scrollTop() + "px"; 
+            //         offset1 = backYloc + $(document).scrollTop() + "px";
+            //         $(name).animate({ top: offset }, { duration: 1000, queue: false }); 
+            //         $(backname).animate({top: offset1 }, { duration: 1, queue: false})
+            //     }); 
+            // }); 
+            function showImg(){
+                $(document).ready(function (){
+                    $("#donate_img").click(function(){
+                        $("#showImg").slideToggle();
+                    })
+                })
+            }
         
         </script> 
         
