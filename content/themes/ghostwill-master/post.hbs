@@ -30,8 +30,12 @@
 </div>
 <section class="share">
 	<!--打赏-->
-	<center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:donate();" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center>
-        <div id="light" class="white_content">
+	{{!-- <center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:donate();" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center> --}}
+    <center><img id="donate_img" src="http://terrynie.com/images/before_donate.png" width="75px" height="75px" onclick="javascript:$("#showImg").slideToggle();" onmouseover="javascript:mouse_over()" onmouseout="javascript:mouse_Out()"></center>
+        <div id="showImg" style="with:100px;height:100px;margin: auto;display:none;">
+            <img src="http://terry408911.oss-cn-hongkong.aliyuncs.com/images/Screen%20Shot%202016-04-01%20at%2012.30.37%20PM.png" style="width:75px;height: 75px;margin: auto;">
+        </div>
+        <!--<div id="light" class="white_content">
             <div style="width:100%;">
 			<center><h3>感谢您的支持！</h3></center>
 			<center>
@@ -70,7 +74,7 @@
 		</div> 
         <div id="fade" class="black_overlay">
 		
-		</div> 
+		</div> -->
         <!--实现窗口滑动-->
         <script type="text/javascript"> 
           
